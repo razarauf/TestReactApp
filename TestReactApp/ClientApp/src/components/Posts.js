@@ -17,7 +17,7 @@ export default function Posts() {
     return (
         <>
             <h1 id="tableLabel">Posts</h1>
-            <p>This component demonstrates fetching data from the server that's in the db.</p>
+            <h4><a href="/Posts/New">Add New Post</a></h4>
             {contents}
         </>
     );
@@ -29,13 +29,17 @@ export default function Posts() {
                     <tr>
                         <th>Title</th>
                         <th>Body</th>
+                        <th>Edit</th>
+                        <th>Delete</th>
                     </tr>
                 </thead>
                 <tbody>
-                    {posts.map(forecast =>
-                        <tr key={forecast.postId}>
-                            <td>{forecast.title}</td>
-                            <td>{forecast.content}</td>
+                    {posts.map(post =>
+                        <tr key={post.postId}>
+                            <td>{post.title}</td>
+                            <td>{post.content}</td>
+                            <td><a href="">Edit</a></td>
+                            <td><button>Delete</button></td>
                         </tr>
                     )}
                 </tbody>
