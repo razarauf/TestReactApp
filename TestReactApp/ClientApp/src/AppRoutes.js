@@ -7,7 +7,7 @@ import { Home } from "./components/Home";
 const AppRoutes = [
     {
         index: true,
-        element: <Home />
+        element: <Posts />
     },
     {
         path: '/counter',
@@ -19,8 +19,8 @@ const AppRoutes = [
         element: <FetchData />
     },
     {
-        path: '/posts',
-        element: <Posts />
+        path: '/home',
+        element: <Home />
     },
     ...ApiAuthorzationRoutes
 ];

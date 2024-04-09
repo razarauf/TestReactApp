@@ -5,7 +5,7 @@ export default function Counter()
     const [ currentCount, setCurrentCount ] = React.useState(0)
 
     function incrementCounter() {
-        setCurrentCount(prevValue => currentCount + 1)
+        setCurrentCount(prevValue => prevValue + 1)
     }
 
     return (

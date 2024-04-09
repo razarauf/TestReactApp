@@ -17,7 +17,6 @@ export default function Posts() {
     return (
         <>
             <h1 id="tableLabel">Posts</h1>
-            <h4><a href="/Posts/New">Add New Post</a></h4>
             {contents}
         </>
     );
